@@ -1,0 +1,209 @@
+/* Importing font family from Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+/* Style for Top Section */
+.top-section {
+  padding: 44px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 360px) {
+    padding: 16px;
+  }
+  @media screen and (min-width: 576px) {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+}
+.main-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  @media screen and (min-width: 380px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 576px) {
+    font-size: 34px;
+  }
+}
+.load-product-btn-container {
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  @media screen and (min-width: 576px) {
+    padding: 40px;
+    margin-top: 60px;
+  }
+}
+.load-product-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  background-image: linear-gradient(to right, #4259c3, #7b9ff2, #55d0ff);
+  cursor: pointer;
+  margin: auto;
+  font-size: 18px;
+  border: none;
+  transition: background-image 0.5s ease-in-out, transform 0.4s ease;
+  font-family: "Montserrat", sans-serif;
+  width: 200px;
+  height: 50px;
+  gap: 10px;
+}
+.load-product-btn:hover {
+  background-image: linear-gradient(to right, #4259c3, #7b9ff2);
+  transform: scale(1.05);
+}
+
+
+/* Style for sortby dropdown */
+.sort-select {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: linear-gradient(to right, #f5f7fa, #e4ebf5);
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  @media screen and (min-width: 360px) {
+    width: 150px;
+  }
+  @media screen and (min-width: 576px) {
+    width: 200px;
+  }
+}
+
+.sort-select:hover {
+  border-color: #7b9ff2;
+}
+
+.sort-select:focus {
+  border-color: #4259c3;
+  box-shadow: 0 0 8px rgba(66, 89, 195, 0.5);
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  @media screen and (min-width: 360px) {
+    padding: 12px;
+  }
+  @media screen and (min-width: 576px) {
+    padding: 40px;
+    gap: 24px;
+  }
+}
+
+
+/* Style for Product Item */
+.product-item {
+  flex: 1 1 140px;
+  max-width: 180px;
+  padding: 10px 12px 20px 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+  box-sizing: border-box;
+  @media screen and (min-width: 360px) {
+    flex: 1 1 150px;
+    max-width: 220px;
+  }
+  @media screen and (min-width: 460px) {
+    flex: 1 1 210px;
+    max-width: 280px;
+    padding: 20px 22px 20px 22px;
+  }
+  @media screen and (min-width: 576px) {
+    flex: 1 1 230px;
+    max-width: 280px;
+  }
+  @media screen and (min-width: 676px) {
+    flex: 1 1 270px;
+    max-width: 370px;
+  }
+}
+
+.product-item:hover {
+  transform: scale(1.03);
+}
+
+.product-image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+.product-item h3 {
+  margin: 0 0 10px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  @media screen and (min-width: 360px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 576px) {
+    font-size: 1.2rem;
+  }
+}
+
+.product-item p {
+  margin: 5px 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 23px;
+  font-family: "Montserrat", sans-serif;
+  @media screen and (min-width: 576px) {
+    font-size: 1.6rem;
+  }
+}
+
+.add-to-cart-btn {
+  background-color: #0052a2;
+  color: white;
+  padding: 10px 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.6s ease-in-out, transform 0.5s ease-in-out;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  @media screen and (min-width: 360px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+}
+
+.add-to-cart-btn:hover {
+  background-color: darkblue;
+  transform: scale(1.04);
+}
+
+.cart-icon {
+  margin-right: 5px;
+}
+
+.load-product-btn:hover {
+  background-color: #3251c2;
+}
