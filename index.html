@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Commerce Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script type="module" src="index.js"></script>
+
+    <!-- Top section (Main Heading and sort by) -->
+    <div class="top-section">
+      <h1 class="main-heading">All Collection</h1>
+      <div class="sort-container">
+        <select class="sort-select">
+          <option value="" disabled selected hidden>Sort By</option>
+          <option value="lowToHigh">Price: Low to High</option>
+          <option value="highToLow">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Load Product button -->
+    <div id="loadProductBtnContainer" class="load-product-btn-container">
+        <button id="loadProductBtn" class="load-product-btn">Load Product</button>
+    </div>
+
+    <!-- Rendering product cards -->
+    <div id="productContainer" class="product-container"></div>
+  </body>
+</html>
